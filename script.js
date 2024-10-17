@@ -11,7 +11,6 @@ const userEmails = [
     'a.neri@example.com',
     's.martini@mail.com' 
 ];
-
 //Chiedo al cliente di inserire la sua email
 
 const guestEmail = prompt('Inserisci la tua Email');
@@ -23,5 +22,14 @@ let emailFound = false;
 //Ciclo attraverso l'array per trovare l'email
 
 for (let i = 0; i < userEmails.length; i++ ) {
-    
+    if (userEmails[i] === guestEmail) {
+        emailFound = true;
+    }
+    // console.log(emailFound)
+}
+//Verifico il messaggio da stampare
+if (emailFound) {
+    console.log('Accesso consentito, Benvneuto/a alla festa')
+}else{
+    console.log('Accesso negato. La tua email non è nella lista degli invitati');
 }
