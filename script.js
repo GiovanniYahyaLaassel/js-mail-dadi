@@ -12,4 +12,16 @@ const userEmails = [
     's.martini@mail.com' 
 ];
 
-//
+//Chiedo al cliente di inserire la sua email
+
+const guestEmail = prompt('Inserisci la tua Email');
+
+//Verifico se l'email dell'utente e nella lista
+
+let emailFound = false;
+
+//Ciclo attraverso l'array per trovare l'email
+
+for (let i = 0; i < userEmails.length; i++ ) {
+    
+}
